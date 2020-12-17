@@ -21,11 +21,21 @@
     color: white;
 }
 
+input,select{
+    font-size: 3vh;
+    border-radius: 4px;
+}
+
+.search>*{
+    margin:4px;
+}
+
 .restaurants-list>h2{
     margin: 0;
 }
 
 .restaurants-list:hover{
+    cursor: pointer;
     transform: scale(1.1,1.1);
     transition-duration: 1s;
 }
@@ -42,10 +52,16 @@
 }
 .details{
     border: 2px solid black;
+    border-radius: 12px;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
     height: 80vh;
+}
+
+.details{
+    color: rgb(129, 40, 7);
+    background-color: springgreen;
 }
 
 .details>h2{
@@ -53,7 +69,8 @@
 }
 .details>div{
     margin: 6vh;
-    border: 1px solid lightgray;
+    font-size: larger;
+    border: 1px solid rgb(29, 17, 17);
     border-radius: 4px;
     width: 50%;
     margin-left: auto;

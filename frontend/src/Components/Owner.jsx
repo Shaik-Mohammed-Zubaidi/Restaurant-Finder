@@ -17,13 +17,14 @@ const Owner = ()=>{
     }
     
     return <div className="owner">
-        <h1>Welcome Owner</h1>
-        {!displayForm && posted && <button onClick={()=>{setDisplayForm(true)}}>+ Add Restaurant</button>}
+        <h1 className="app-name">Restaurant Finder</h1>
+        <h1>Welcome Aboard!</h1>
+        {!displayForm && posted && <button className="add-button" onClick={()=>{setDisplayForm(true)}}>+ Add Restaurant</button>}
 
         {displayForm && posted && <div className="form">
                 <RestaurantForm postRestaurant={postRestaurant}/>
             </div>}
-        {!posted && <p>Restaurant Posted</p>}
+        {!posted && <p className="posted">Restaurant Posted</p>}
     </div>;
 }
 

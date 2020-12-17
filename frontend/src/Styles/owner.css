@@ -9,7 +9,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* width: 50%; */
+    font-size: larger;
+}
+
+button{
+    font-size: 2.3vh;
 }
 
 #name,#location{
@@ -18,10 +22,26 @@
     vertical-align: middle;
 }
 
-#cuisine-inputs{
-    height: 20vh;
+
+.cuisine-inputs>*{
+    margin: 2vh;
 }
 
 .margin-between>div,.margin-between>button{
     margin: 4vh;
+}
+
+.add-button{
+    width: 14%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vh;
+}
+
+.add-button:hover{
+    cursor: pointer;
+}
+
+.posted{
+    font-size: 3vh;
 }
