@@ -1,6 +1,8 @@
 
 const User = ()=>{
-    return <></>;
+    return <div>
+        Welcome User
+    </div>;
 }
 
 export default User;

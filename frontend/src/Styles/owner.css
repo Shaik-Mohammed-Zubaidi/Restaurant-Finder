@@ -1,0 +1,22 @@
+.owner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#name,#location{
+    width: 5vh;
+    height: 2vh;
+    vertical-align: middle;
+}
+
+#cuisine-inputs{
+    height: 20vh;
+}

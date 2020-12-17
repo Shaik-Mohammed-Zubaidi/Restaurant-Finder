@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/Owner" component={Owner}/>
-        <Route path="/User" component={User} />
+        <Route path="/Home/Owner" component={Owner}/>
+        <Route path="/Home/User" component={User} />
         <Route path="/Home" component={Home} />
         <Redirect to='/Home' />
       </Switch>
