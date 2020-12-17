@@ -77,6 +77,7 @@ const CityRestaurants = () => {
       <h1 className="app-name">Restaurant Finder</h1>
       <h1>{city}</h1>
 
+      <div className="searches-filters">
       <div className="search"><input id="search" placeholder="Search by hotel name"/>
         <button onClick={handleSearch} >Search</button>
       </div>
@@ -93,6 +94,7 @@ const CityRestaurants = () => {
         <button onClick={()=>applyFilter("l")}>Apply</button>
       </div>
       <button onClick={clearAll}>Clear Searches and Filters</button>
+      </div>
       <div>
         {restaurants.map((restaurant) => (
           <div className="border restaurants-list" key={restaurant.name} onClick={()=>goToDetailsPage(restaurant.name)}>

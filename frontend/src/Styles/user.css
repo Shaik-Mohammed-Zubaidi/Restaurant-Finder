@@ -26,6 +26,10 @@ input,select{
     border-radius: 4px;
 }
 
+.searches-filters>*{
+    margin: 1vh;
+}
+
 .search>*{
     margin:4px;
 }
