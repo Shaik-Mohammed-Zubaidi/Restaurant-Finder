@@ -1,0 +1,98 @@
+.app-name{
+    font-size: 5vh;
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.flex-class{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.restaurants-list{
+    height: 17vh;
+    padding: 1.5vh;
+    padding-bottom: 0.5vh;
+    margin: 4px;
+    background-color: rgb(107, 53, 194);
+    color: white;
+}
+
+.restaurants-list>h2{
+    margin: 0;
+}
+
+.restaurants-list:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 1s;
+}
+
+.border{
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border>div{
+    margin: 8px;
+}
+.details{
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 80vh;
+}
+
+.details>h2{
+    font-size: xx-large;
+}
+.details>div{
+    margin: 6vh;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.details>div>*{
+    margin: 1vh;
+}
+
+.cuisine-details>div{
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 28%;
+}
+.menu-details>div{
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.user-page>div{
+    font-size: 5vh;
+    margin: 1vh;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 40%;
+    height: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+.user-page>div:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.user-page{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
