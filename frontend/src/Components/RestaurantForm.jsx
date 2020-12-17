@@ -9,7 +9,7 @@ const RestaurantForm=(props)=>{
     const [dishesEntered,setDishesEntered]= useState("");
     const addCuisine=()=>{
         const cuisinesCopy= [...cuisines];
-        cuisinesCopy.push({cuisineName: cuisineEntered,dishesName: dishesEntered});
+        cuisinesCopy.push({cuisineName: cuisineEntered,dishName: dishesEntered});
         setCuisines(cuisinesCopy);
         setCuisineEntered("");
         setDishesEntered("");
@@ -22,19 +22,20 @@ const RestaurantForm=(props)=>{
             location: document.getElementById("location").value,
             cuisines: cuisines
         }
+        console.log(restaurant);
         props.postRestaurant(restaurant);
     }
 
-    return <div id="form">
-        <input id="name"/>
-        <input id="location"/>
+    return <div className="margin-between">
+        <div><label>Enter Your Hotel Name: </label><input id="name"/></div>
+        <div><label>Enter Your Hotel Location: </label><input id="location"/></div>
         {cuisines.map((cuisine)=> <div key={cuisine.cuisineName}>
-            <div>{cuisine.cuisineName} </div>
-            <div>{cuisine.dishesName}</div>
+            <div>Cuisine: {cuisine.cuisineName} </div>
+            <div>Dish: {cuisine.dishName}</div>
         </div>)}
         {cuisineInputs && <div className="cuisine-inputs">
-                <input onChange={(event)=>setCuisineEntered(event.target.value)} value={cuisineEntered} />
-                <input onChange={(event)=>setDishesEntered(event.target.value)} value={dishesEntered} />
+                <div>Enter Cuisine Name: <input onChange={(event)=>setCuisineEntered(event.target.value)} value={cuisineEntered} /></div>
+                <div>Enter Dish Name: <input onChange={(event)=>setDishesEntered(event.target.value)} value={dishesEntered} /></div>
                 <button onClick={addCuisine}>Add</button>
             </div>}
         <button onClick={()=>{setCuisineInputs(true)}}>Add Cuisine</button>
